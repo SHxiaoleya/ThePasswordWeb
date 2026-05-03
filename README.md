@@ -7,6 +7,8 @@
 > Android APK 请在 **GitHub Releases** 页面下载。
 
 ---
+### 演示站：[点击前往](https://tre-password.rth1.xyz/)
+---
 
 ## ✨ 项目功能
 
