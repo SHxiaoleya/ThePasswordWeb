@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安全设置 - 密码管理器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ 安全设置</h1>
+
+    <section class="card">
+      <div class="form-actions" style="justify-content:space-between;">
+        <a href="./index.html" class="secondary btn-link">返回主页</a>
+        <span><strong>状态：</strong><span id="vaultStatus">检测中...</span></span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>主密码开关</h2>
+      <div class="form-actions">
+        <button id="toggleMasterBtn" class="secondary">关闭主密码</button>
+      </div>
+      <p class="tip">关闭后将改为本地明文存储；开启后将加密存储。</p>
+    </section>
+
+    <section class="card" id="changeMasterSection">
+      <h2>修改主密码</h2>
+      <div class="form-row">
+        <label for="oldMasterPassword">旧主密码</label>
+        <input id="oldMasterPassword" type="password" placeholder="请输入旧主密码" />
+      </div>
+      <div class="form-row">
+        <label for="newMasterPassword">新主密码</label>
+        <input id="newMasterPassword" type="password" placeholder="至少 8 位" />
+      </div>
+      <div class="form-row">
+        <label for="newMasterPasswordConfirm">确认新主密码</label>
+        <input id="newMasterPasswordConfirm" type="password" placeholder="请再次输入新主密码" />
+      </div>
+      <div class="form-actions">
+        <button id="changeMasterBtn">修改主密码</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
